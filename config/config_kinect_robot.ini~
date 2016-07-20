@@ -1,0 +1,17 @@
+[camera]
+interface=Camera
+depthOffset=0
+filterBlurredImages=false
+
+[camera_topics]
+depth=/camera/depth/image_raw
+color=/camera/depth/points
+camInfo=/camera/depth/camera_info
+depthHints=compressedDepth
+colorHints=compressed
+
+[tf]
+from=/camera_depth_optical_frame
+to=/map
+lookupViewpoint=true
+semanticMap=semantic_map.yaml
